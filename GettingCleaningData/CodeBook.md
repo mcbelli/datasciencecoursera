@@ -20,6 +20,22 @@ that does the following:
 5) From the data set in step 4, creates a second, independent tidy data set 
   with the average of each variable for each activity and each subject.
 
+Here is a description of the data, from the creators of the data:
+•	Participants: 30 volunteers, aged 19-48 years.
+•	Activities: Six types (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).
+•	Equipment: Samsung Galaxy S II smartphone worn on the waist.
+•	Data Capture: 3-axial linear acceleration and 3-axial angular velocity, recorded at 50Hz.
+•	Video Recording: Experiments video-recorded for manual data labeling.
+•	Dataset Partitioning: Randomly into 70% training data and 30% test data.
+•	Pre-processing: Noise filters applied; data sampled in 2.56-second sliding windows (128 readings/window) with 50% overlap.
+•	Signal Separation: Sensor acceleration signal divided into body acceleration and gravity using a Butterworth low-pass filter (0.3 Hz cutoff).
+•	Feature Extraction: Variables calculated from time and frequency domain for each window.
+•	For each record in the dataset: 
+    o	Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
+    o	Triaxial Angular velocity from the gyroscope. 
+    o	A 561-feature vector with time and frequency domain variables.
+    o	Its activity label. - An identifier of the subject who carried out the experiment.
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
